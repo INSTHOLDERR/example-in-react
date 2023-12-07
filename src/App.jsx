@@ -7,6 +7,7 @@ import ContactUs from "./contact-us";
 import Login from "./login";
 import Profile from "./profile";
 import Mw from "./middlewares/middleware";
+import Register from "./register";
 
 
 
@@ -19,6 +20,8 @@ function App(){
             <Route path="/about" element={<About/>}/>
             <Route path="/contact-us" element={<ContactUs/>}/>
             <Route path="/login" element={<Login/>}/>
+            <Route path="/register" element={<Register/>}/>
+
             <Route path="/profile" element={<Mw><Profile/></Mw>}/>
             <Route path="/*" element={<h1>PAGE NOT FOUND 404</h1>}/>
         </Routes>
